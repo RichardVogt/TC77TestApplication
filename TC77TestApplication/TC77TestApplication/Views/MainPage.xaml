@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:custom="clr-namespace:TC77TestApplication.CustomControls;assembly=TC77TestApplication"
+             x:Class="TC77TestApplication.MainPage">
+    <ContentPage Title="Device">
+        <ContentPage.Content>
+            <ListView ItemsSource="{Binding Props}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <custom:CustomViewCell SelectedItemBackgroundColor="#e6e6e6">
+                            <ViewCell.View>
+                                <StackLayout HorizontalOptions="FillAndExpand"
+                                             VerticalOptions="FillAndExpand"
+                                             Orientation="Vertical"
+                                             Padding="1" Spacing="1">
+                                    <Label TextColor="Black" Text="{Binding PropName}" />
+                                    <Label TextColor="Gray" FontAttributes="Italic" Text="{Binding PropValue}" HorizontalTextAlignment="End"/>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </custom:CustomViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ContentPage.Content>
+    </ContentPage>
+    <ContentPage Title="WiFi">
+        <ContentPage.Content>
+            <ListView ItemsSource="{Binding WiFi}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <custom:CustomViewCell SelectedItemBackgroundColor="#e6e6e6">
+                            <ViewCell.View>
+                                <StackLayout HorizontalOptions="FillAndExpand"
+                                             VerticalOptions="FillAndExpand"
+                                             Orientation="Vertical"
+                                             Padding="1" Spacing="1">
+                                    <Label TextColor="Black" Text="{Binding PropName}" />
+                                    <Label TextColor="Gray" FontAttributes="Italic" Text="{Binding PropValue}" HorizontalTextAlignment="End"/>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </custom:CustomViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ContentPage.Content>
+    </ContentPage>
+</TabbedPage>

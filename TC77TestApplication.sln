@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TC77TestApplication.Android", "TC77TestApplication\TC77TestApplication.Android\TC77TestApplication.Android.csproj", "{B0CF53F4-1E7B-44E9-9EE0-A3564791E9B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TC77TestApplication", "TC77TestApplication\TC77TestApplication\TC77TestApplication.csproj", "{6778ED8A-5CF8-46C8-8A72-0A7DC7BC50E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0CF53F4-1E7B-44E9-9EE0-A3564791E9B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0CF53F4-1E7B-44E9-9EE0-A3564791E9B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0CF53F4-1E7B-44E9-9EE0-A3564791E9B4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B0CF53F4-1E7B-44E9-9EE0-A3564791E9B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0CF53F4-1E7B-44E9-9EE0-A3564791E9B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0CF53F4-1E7B-44E9-9EE0-A3564791E9B4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6778ED8A-5CF8-46C8-8A72-0A7DC7BC50E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6778ED8A-5CF8-46C8-8A72-0A7DC7BC50E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6778ED8A-5CF8-46C8-8A72-0A7DC7BC50E3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6778ED8A-5CF8-46C8-8A72-0A7DC7BC50E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6778ED8A-5CF8-46C8-8A72-0A7DC7BC50E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6778ED8A-5CF8-46C8-8A72-0A7DC7BC50E3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1A7F0EC-6DAC-4873-A949-6187288F3273}
+	EndGlobalSection
+EndGlobal
