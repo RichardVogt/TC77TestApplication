@@ -13,6 +13,7 @@ namespace TC77TestApplication.ViewModels
         public PropsViewModel()
         {
             LoadVals();
+            PermissionsMethods.CheckPermissions();
         }
         void LoadVals()
         {
@@ -26,8 +27,6 @@ namespace TC77TestApplication.ViewModels
             Props.Add(PropMethods.GetVersion());
             Props.Add(PropMethods.GetSerialNumber());
             Props.Add(PropMethods.GetBuildVersion());
-
-            //Props.Add(PropMethods.GetLocation());
 
             WiFi.Add(PropMethods.GetIpAddress());
         }

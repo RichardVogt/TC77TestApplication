@@ -1,14 +1,24 @@
-﻿using Android.OS;
+﻿using Android;
+using Android.Content;
+using Android.Net.Wifi;
+using Android.OS;
+using Plugin.Permissions;
+using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 using TC77TestApplication.Models;
 using Xamarin.Essentials;
+using Xamarin.Forms;
+using static Android.Manifest;
 using static Xamarin.Essentials.Permissions;
+using Plugin.Permissions.Abstractions;
 
 namespace TC77TestApplication.Helpers
 {
     internal class PropMethods
     {
+
 
         //public void DoSomething()
         //{
@@ -40,16 +50,16 @@ namespace TC77TestApplication.Helpers
         //        }
 
 
-        public async Task<PermissionStatus> CheckAndRequestPermissionAsync<T>(T permission)
-                    where T : BasePermission
-        {
-            var status = await permission.CheckStatusAsync();
-            if (status != PermissionStatus.Granted)
-            {
-                status = await permission.RequestAsync();
-            }
-            return status;
-        }
+        //public async Task<PermissionStatus> CheckAndRequestPermissionAsync<T>(T permission)
+        //            where T : BasePermission
+        //{
+        //    var status = await permission.CheckStatusAsync();
+        //    if (status != PermissionStatus.Granted)
+        //    {
+        //        status = await permission.RequestAsync();
+        //    }
+        //    return status;
+        //}
 
         internal Prop GetHostName()
         {
